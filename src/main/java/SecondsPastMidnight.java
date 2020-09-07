@@ -1,18 +1,27 @@
 import java.util.Scanner;
 
-class SecondsPastMidnight {
+class Timestamps {
     public static void main(String[] args) {
 
         //Creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        //Reads int from user
-        int number = scanner.nextInt();
+        //Reads ints from user
+        int hours1 = scanner.nextInt();
+        int minutes1 = scanner.nextInt();
+        int seconds1 = scanner.nextInt();
+        int hours2 = scanner.nextInt();
+        int minutes2 = scanner.nextInt();
+        int seconds2 = scanner.nextInt();
 
-        //Your code goes here
+
+        /*
+         *  your code goes here
+         */
 
 
         // closing the scanner object
         scanner.close();
     }
+}
 }
