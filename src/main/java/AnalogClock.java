@@ -8,18 +8,12 @@ class AnalogClock {
 
         //Reads ints from user
         int hourHand = scanner.nextInt();
-        int hours;
-        int degreesPast;
-        int minutesPast;
-        int minuteHandDegrees;
+        int minuteHand;
         /*
          *  your code goes here
          */
-            hours = hourHand / 30;
-            degreesPast = hours * 30;
-            minutesPast = hourHand - degreesPast;
-            minuteHandDegrees = (30 - minutesPast) * 6;
-            System.out.print(minuteHandDegrees);
+            minuteHand = (hourHand % 30) * 12;
+            System.out.print(minuteHand);
         // closing the scanner object
         scanner.close();
     }
